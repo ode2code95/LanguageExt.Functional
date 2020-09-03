@@ -23,6 +23,8 @@ namespace Console.Playground
             {
                 WriteLine(t.EmptyAsNone());
             }
+            
+            WriteLine($"\n{new SwitchBoard().CallIllinoisFixed()}\n");
 
             WriteLine("Press enter to quit...");
             ReadLine();

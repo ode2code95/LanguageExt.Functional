@@ -2,6 +2,7 @@
 using LangExt.Extensions;
 using LanguageExt;
 using static LanguageExt.Prelude;
+using static System.Console;
 
 namespace Console.Playground
 {
@@ -13,18 +14,18 @@ namespace Console.Playground
             
             foreach (string t in test)
             {
-                System.Console.WriteLine(t.EmptyAsNone());
+                WriteLine(t.EmptyAsNone());
             }
             
             test.Map(x => x.Apply(Optional));
             
             foreach (string t in test)
             {
-                System.Console.WriteLine(t.EmptyAsNone());
+                WriteLine(t.EmptyAsNone());
             }
 
-            System.Console.WriteLine("Press enter to quit...");
-            System.Console.ReadLine();
+            WriteLine("Press enter to quit...");
+            ReadLine();
         }
     }
 }

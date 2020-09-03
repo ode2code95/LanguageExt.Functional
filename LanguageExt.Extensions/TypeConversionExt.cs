@@ -1,4 +1,4 @@
-﻿namespace LangExt.Extensions
+﻿namespace LanguageExt.Extensions
 {
     public static class TypeConversionExt
     {

@@ -1,4 +1,4 @@
-﻿using LangExt.Extensions;
+﻿using LanguageExt.Extensions;
 
 namespace Console.Playground
 {

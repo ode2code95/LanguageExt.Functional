@@ -10,7 +10,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\LangExt.Extensions\LangExt.Extensions.csproj" />
+      <ProjectReference Include="..\LanguageExt.Extensions\LanguageExt.Extensions.csproj" />
     </ItemGroup>
 
 </Project>

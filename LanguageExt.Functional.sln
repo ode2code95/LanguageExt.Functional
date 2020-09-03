@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Console.Playground", "Console.Playground\Console.Playground.csproj", "{D1F8646D-77FD-40A3-A00C-D2DB67ED9589}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LangExt.Extensions", "LangExt.Extensions\LangExt.Extensions.csproj", "{52306977-C17B-4B1B-ABEE-9271A4A969F2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LanguageExt.Extensions", "LanguageExt.Extensions\LanguageExt.Extensions.csproj", "{52306977-C17B-4B1B-ABEE-9271A4A969F2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

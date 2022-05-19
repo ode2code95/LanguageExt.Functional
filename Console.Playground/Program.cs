@@ -12,10 +12,28 @@ namespace Console.Playground
         static void Main(string[] args)
         {
             //TestEmptyAsNone();
-            TestMapAsync().Wait();
+            //TestMapAsync().Wait();
+            TestMapAsyncWithNone().Wait();
 
             WriteLine("Press enter to quit...");
             ReadLine();
+        }
+
+        private static async Task TestMapAsyncWithNone()
+        {
+            // This line throws a ValueIsNoneException
+            var a_n = await Option<Unit>.None.MapAsync(async _ =>
+                {
+                    await Task.Delay(500);
+                    WriteLine("None Done <Unit>!");
+                    return unit;
+                })
+                // Update: Adding IfNone prevents the exception in the awaiter! 
+                .IfNone(() =>
+                {
+                    WriteLine("Got NONE!");
+                    return unit;
+                });
         }
 
         private static async Task TestMapAsync()

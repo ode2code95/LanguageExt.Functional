@@ -26,6 +26,7 @@ namespace Console.Playground
                 return unit;
             });
             
+            // This line throws a ValueIsNoneException
             var a_n = await Option<Unit>.None.MapAsync(async _ => {
                 await Task.Delay(500);
                 WriteLine("None Done <Unit>!");
